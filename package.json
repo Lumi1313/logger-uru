@@ -1,0 +1,37 @@
+{
+  "name": "my-logger-package",
+  "version": "1.0.0",
+  "description": "logger para proyecto de universidad",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "logger",
+    "middleware",
+    "express",
+    "monitoring",
+    "sqlite"
+  ],
+  "author": "Juan Sampayo",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.5.0",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.6",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build"
+  }
+}

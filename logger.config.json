@@ -1,0 +1,23 @@
+{
+  "storage": {
+    "strategy": "sqlite",
+    "config": {
+      "max_records": 10000 
+    }
+  },
+  "capture": {
+    "request_headers": true,
+    "request_body": true,
+    "response_body": true,
+    "response_headers": true,
+    "excluded_paths": ["/health", "/api/metrics"],
+    "sensitive_headers": ["authorization", "cookie", "password"]
+  },
+  "monitoring": {
+    "enabled": true,
+    "port": 8080,
+    "auth": {
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       /* Versión moderna de JS */
+    "module": "CommonJS",                     /* Módulos estándar de Node.js */
+    "outDir": "./dist",                       /* Directorio de salida (Donde irá el código JS) */
+    "rootDir": "./src",                       /* Directorio de entrada */
+    "strict": true,                           /* Buenas prácticas de TS */
+    "esModuleInterop": true,                  /* Interoperabilidad de módulos */
+    "skipLibCheck": true,                     /* Ignorar tipos de librerías de terceros */
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,                      /* Generar archivos .d.ts (Tipos) para los consumidores del paquete */
+    "sourceMap": true                         /* Útil para debugging */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests"]
+}
